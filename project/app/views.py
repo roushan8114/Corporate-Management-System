@@ -16,6 +16,9 @@ def login(req):
 def forgetpass(req):
     return render(req,'forgetpass.html')
 
+def reports(req):
+    return render(req,'reports.html')
+
 def send_otp(req):
     if req.method == 'POST':
         e = req.POST.get('email')
