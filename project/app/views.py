@@ -28,7 +28,7 @@ def send_otp(req):
         req.session['classotp'] =otp
         send_mail(
             'OTP Verification',
-            f'Generate OTP for Corporate Management System is {otp}',
+            f'Generated OTP for Corporate Management System is {otp}',
             'roushanrajput12362@gmail.com',
             [e]
         )
