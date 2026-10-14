@@ -32,9 +32,7 @@ def send_otp(req):
             'roushanrajput12362@gmail.com',
             [e]
         )
-
         return render(req, 'verify_otp.html')
-
     return render(req, 'forgetpass.html')
 
 
@@ -83,7 +81,6 @@ def login_data(req):
             return render(req, 'empdashboard.html')
         else:
             return render(req, 'login.html', {'error': 'Email ya Password galat hai'})
-
 
 def emp_data(req):
     if req.method == 'POST':
