@@ -325,4 +325,4 @@ Company Team
 def logout(req):
     if req.session.get('admin'):
         req.session.flush()
-    return render(req,'landing.html')
+    return render(req,'login.html')
